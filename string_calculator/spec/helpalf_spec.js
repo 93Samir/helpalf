@@ -53,6 +53,10 @@ describe('Help ALF', function () {
 		expect(helpAlf.findSpaceship(map)).toBe("Spaceship lost forever.");
 	});
 
+	it('sollte eine Nachricht zurückgeben, wenn das Raumschiff nicht gefunden wird', function () {
+		const map = ".";
+		expect(helpAlf.findSpaceship(map)).toBe("Spaceship lost forever.");
+	});
 
 
 });
