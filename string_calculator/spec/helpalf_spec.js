@@ -26,5 +26,15 @@ describe('Help ALF', function () {
 		expect(helpAlf.findSpaceship(map)).toEqual([1, 1]);
 	});
 
+	it('sollte die korrekten Koordinaten [10, 0] zurückgeben, wenn das Raumschiff gefunden wird', function () {
+		const map =
+			".........\n" +
+			"..........\n" +
+			"..........\n" +
+			"..........\n" +
+			"..........\n" +
+			"..........X";
+		expect(helpAlf.findSpaceship(map)).toEqual([10, 0]);
+	});
 
 });
